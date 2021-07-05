@@ -1,0 +1,75 @@
+
+.unfocused-card {
+    position: inherit;
+    z-index: 1;
+    background-color: var(--transparent-black);
+}
+
+.focused-card {
+    border: 2px solid var(--orange);
+    position: fixed;
+    background-color: black;
+
+    top: 0;
+    z-index: 10;
+    /* top: calc(50% - (400px/2)); */
+}
+
+.focused-card + .reservation-picker {
+    position: fixed;
+    /* width: 45vw; */
+    width: 500px;
+    height: max-content;
+    bottom: 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* closer */
+#card-close {
+    /* display: none; */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.316);
+}
+#card-close:hover {
+    /* background-color: rgba(87, 87, 87, 0.72); */
+    font-size: 1em;
+    border: 2px solid var(--orange);
+}
+.focused-card #card-close {
+    display: block;
+}
+.unfocused-card #card-close {
+    display: none;
+}
+
+/* media */
+@media screen and (max-width: 500px) {
+    .focused-card {
+        position:block;
+        width: 100%;
+    }
+    .focused-card > * {
+        width: 100%;
+    }
+    .focused-card .card-content {
+        display: none;
+    }
+    .focused-card + .reservation-picker {
+        position: block;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .focused-card form {
+        width: 100%;
+    }
+}
+

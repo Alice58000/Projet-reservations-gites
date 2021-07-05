@@ -1,0 +1,182 @@
+html {
+    --size: 30px;
+    --border-radius: 100%;
+    --transblack: rgba(0, 0, 0, 0.535);
+}
+.reservation-picker > * {
+    /* width: 49%; */
+}
+.reservation-picker {
+    display: none;
+    background-color: brown;
+    /* width: 35vw; */
+    /* max-width: 400px; */
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#date-picker {
+    /* width: max-content; */
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+#date-picker>header {
+    width: 70%;
+    padding: 0 2%;
+    margin: 2% auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: var(--transblack);
+    color: var(--orange);
+}
+#calendar {
+    padding: 2% 5%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(7, var(--size));
+    grid-template-rows: repeat(4, var(--size));
+    gap: 1%;
+
+    justify-content: center;
+
+}
+.dp-down, .dp-up {
+    height: var(--size);
+    width: var(--size);
+    border-radius: var(--border-radius);
+    border: var(--orange);
+}
+
+.calendar-case {
+    border: 1px solid black;
+    height: var(--size);
+    width: var(--size);
+    text-align: center;
+
+    border-radius: var(--border-radius);
+}
+.calendar-case:hover, .dp-down:hover, .dp-up:hover {
+    border: 1px solid var(--orange);
+}
+
+#div-inputs {
+    width: 100%;
+    margin: 2% auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+
+}
+#div-inputs div {
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 2%; */
+    width: 95%;
+}
+#div-inputs div * {
+    padding: 4%;
+    width: 100%;
+    margin: 2%;
+}
+#div-inputs label {
+    border-radius: 10px;
+    background-color: var(--transblack);
+    color: var(--orange);
+    border: 1px solid black;
+}
+#div-price {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    /* gap: 10%; */
+}
+#calendar-arrivee, #calendar-depart {
+    padding: 2%;
+    /* font-size: 0.5em; */
+}
+.reservation-picker input[type=date]:disabled {
+    opacity: 1;
+    background-color: var(--transblack);
+    color: orange;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+#btn-arrivee, #btn-depart {
+    border-radius: 10px;
+    background-color: var(--transblack);
+    color: var(--orange);
+    border: 1px solid black;
+}
+.active#btn-arrivee, .active#btn-depart, #btn-send {
+    border-radius: 10px;
+    background-color: var(--transblack);
+    color: var(--orange);
+    border: 1px solid black;
+    background-color: var(--orange);
+    color: black;
+}
+button, input[type=submit] {
+    border-radius: 10px;
+    background-color: var(--transblack);
+    color: var(--orange);
+    border: 1px solid black;
+}
+.reservation-picker  {
+    /* width: min-content; */
+}
+.reservation-picker #form-resa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+#div-inputs + div {
+    margin-bottom: 4%;
+}
+#div-mail {
+    margin-bottom: 4%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+}
+#btn-send {
+    margin: 2%;
+    padding: 2%;
+    width: max-content;
+    margin-bottom: 4%;
+    background-color: var(--orange);
+    color: black;
+}
+.active {
+    background-color: var(--orange);
+    color: black;
+}
+.active + input[type=date]:disabled {
+    border: 2px solid var(--orange);
+    color: black;
+    color: orange;
+}
+input[type=email] {
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+
+    padding: 2%;
+}
+

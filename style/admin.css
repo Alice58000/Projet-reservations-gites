@@ -1,0 +1,105 @@
+body>header h3 {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+}
+#admin-container * {
+    /* border: 1px solid black; */
+}
+#admin-container {
+    width: 100vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#admin-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#admin-container section {
+    background-color: rgba(128, 128, 128, 0.589);
+    border-radius: 10px;
+    margin: 2%;
+}
+#admin-container input {
+    background-color: rgba(194, 111, 81, 0.671);
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 2%;
+}
+
+.form-admin-content {
+    margin: 2%;
+    
+}
+/* .form-admin #form-admin-add{
+    text-align: center;
+} */
+.form-admin-content>div {
+    /* background-color: crimson; */
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+    
+}
+
+#admin-edit-section>form {
+    margin: 2%;
+    border: 1px solid black;
+}
+#admin-edit-section input:not([type=button]) {
+}
+.form-admin-edit .btn-edit-confirm {
+    visibility: hidden;
+}
+
+.on-edit {
+    background-color: teal;
+}
+
+.on-edit input:not([type=button]) {
+        border: 2px solid orange;
+        color: black;
+}
+
+.on-edit .btn-edit-confirm {
+    border: 2px solid orange;
+    color: black;
+    visibility: visible;
+    display: block;
+
+}
+label {
+    color: white;
+}
+
+select {
+    background-color: rgba(194, 111, 81, 0.671);
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+#admin-container select:disabled, #admin-container input:not([type=button]), textarea {
+    padding: 2%;
+    background-color: rgba(194, 111, 81, 0.671);
+    border-radius: 15px;
+    border: 1px solid white;
+    color: black;
+}
+

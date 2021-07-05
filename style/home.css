@@ -1,0 +1,187 @@
+#title-section {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#main-section {
+    background-color: var(--transparent-black);
+    height: 100%;
+}
+#main-section>header {
+    height: calc(var(--header-height) *2);
+    margin-top: - var(--header-height);
+    /* padding-top: var(--header-height); */
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-section>header a {
+    width: 100%;
+    display: grid;
+}
+#main-section>header h2 {
+    text-transform: uppercase;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 1% 5%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    justify-self: center;
+}
+
+/* FILTERS */
+#sec-filters {
+    background-color: rgba(189, 189, 189, 0.693);
+    margin: 1% 2%;
+    border-radius: 5px;
+}
+#sec-filters form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    /* padding: 0 10%; */
+}
+#sec-filters label {
+    display: inline-block;
+    width: 50%;
+}
+#sec-filters form > div {
+    width: 45%;
+    margin: 1% auto;
+    display: flex;
+    justify-content: center;
+}
+#form-filters-div-button {
+    display: flex !important;
+}
+#form-filters-div-button input[type=submit] {
+    padding: 1% 3%;
+}
+#sec-filters input, #sec-filters select, #sec-filters button {
+    background-color: var(--orange-input);
+    border: none;
+    color: white;
+
+    padding: 0 2%;
+    width: 40%;
+    min-width: 110px;
+    height: 30px;
+    border-radius: 15px;
+}
+#sec-filters input:focus, #sec-filters select:focus {
+    outline: none;
+    border: 1px solid var(--orange);
+}
+#sec-filters button, #sec-filters input[type=submit] {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+#sec-filters input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 400px) {
+    /* responsive du filtre */
+    #sec-filters {
+        padding: 2%;
+        font-size: 0.8em;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #sec-filters form > div {
+        width: 100%;
+        margin: 1% auto;
+    }
+    #cont-categorie {
+        order: -1;
+    }
+    #cont-date-arrivee {
+        order: 8;
+    }
+    #cont-date-depart {
+        order: 9;
+    }
+    #form-filters-div-button {
+        order: 10;
+    }
+
+    #sec-filters input, #sec-filters select, #sec-filters button {
+        background-color: var(--orange-input);
+        border: none;
+        color: white;
+
+        padding: 0 2%;
+        width: 40%;
+        min-width: 110px;
+        height: 20px;
+        border-radius: 15px;
+    }
+    #form-filters-div-button input[type=submit] {
+        padding: 0;
+        margin: 2% auto;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color:rgba(138, 226, 226, 0.562);
+   
+}
+
+.footer-suiveznous {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#grdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  
+   
+}
+
+a {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.lien {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+
+  
+}
+
+.lien2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 5%;
+
+  
+ 
+}
+
+
+small {
+    display: flex;
+    justify-content: center;
+}

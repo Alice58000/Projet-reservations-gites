@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@300;400;700&display=swap');
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* font-family: 'Gochi Hand', cursive; */
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.3em;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+body {
+    --orange: rgb(244, 84, 21);
+    --orange-input: rgba(238, 109, 59, 0.44); 
+    --grey-card: #D7D7D7;
+    --transparent-black: #00000075;
+    --transparent-grey: rgba(189, 189, 189, 0.809);
+
+    --header-height: 10vh;
+
+    --icon-size: 32px;
+
+    --radius: 5px;
+}
+
+body {
+    background-image: url("../static/img/fond-ecran.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body>header {
+    height: var(--header-height);
+    /* background-color: var(--transparent-black); */
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: right;
+}
+body>header div {
+
+}
+
+body>footer {
+    background-color: var(--transparent-black);
+}
+
+.a-adminer {
+    margin: 2%;
+    width: 42px;
+    height: 42px;
+
+    background-color: var(--transparent-black);
+    border-radius: 100%;
+    border: 1px solid orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+.a-adminer a {
+    z-index: 50;
+    color: orange;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
